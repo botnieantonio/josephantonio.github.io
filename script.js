@@ -1,6 +1,6 @@
 // "Hire me" button functionality
 document.querySelector('#hire').addEventListener('click', () => {
-    document.querySelector('#msg').textContent = 'Salamat! Babalikan kita.';
+    document.querySelector('#msg').textContent = 'https://www.linkedin.com/in/jdanotnio/';
 });
 
 // Icon-Only Dark/Light Mode functionality
