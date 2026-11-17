@@ -5,13 +5,8 @@ body {
     margin: auto;
     padding: 16px;
 }
-h1 {
-    color: navy;
-}
-img {    
-    border-radius: 50%;
-    width: 50%;
-}
+h1 { color: navy; }
+img { border-radius: 50%; }
 ul {
     display: flex;
     flex-wrap: wrap;
