@@ -17,9 +17,6 @@ ul {
     flex-wrap: wrap;
     gap: 8px;
 }
-h1 {
-    color: navy;
-}
 button {
     background: #000080;
     color: white;
