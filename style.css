@@ -1,24 +1,122 @@
+/* Color Variables for Theme Switching */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f4f4f4;
+    --btn-bg: #007BFF;
+    --btn-hover: #0056b3;
+    --link-color: #007BFF;
+    --border-color: #cccccc;
+}
+
+body.dark-mode {
+    --bg-color: #1a202c;
+    --text-color: #e2e8f0;
+    --card-bg: #2d3748;
+    --btn-bg: #3182ce;
+    --btn-hover: #2b6cb0;
+    --link-color: #63b3ed;
+    --border-color: #4a5568;
+}
+
 body {
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
-    background: #f5f7fb;
     max-width: 600px;
-    margin: auto, 50px;
-    color: #333;
-    padding: 16px;
+    margin: 40px auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 0 20px;
 }
-h1 { color: navy; }
-img { 
-    border-radius: 50%; 
-}
-ul {
+
+.header-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
 }
-button {
-    background: #000080;
-    color: white;
+
+.theme-btn {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: var(--card-bg);
+    margin: 8px 0;
+    padding: 12px;
     border-radius: 8px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--btn-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#msg {
+    color: #48bb78;
+    font-weight: bold;
+    height: 20px;
+    margin-top: 10px;
+}
+.theme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    width: 40px;  /* Set a fixed width */
+    height: 40px; /* Set a matching fixed height */
+    padding: 0;   /* Remove padding since width/height handle the size */
+    border-radius: 50%; /* Makes the button a perfect circle */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-btn:hover {
+    background-color: var(--border-color);
 }
